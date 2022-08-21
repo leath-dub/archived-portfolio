@@ -1,8 +1,8 @@
 @font-face
  {
-    font-family: "VictorMono";
+    font-family: "Iosevka";
     font-weight: normal;
-    src: url("../fnt/VictorMono-Regular.ttf") format("truetype");
+    src: url("../fnt/iosevka.ttf") format("truetype");
  }
 *
   {
@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     color: var(--font-clr);
-    font-family: "VictorMono";
+    font-family: "Iosevka Slab";
     transition: opacity 0.2s ease;
   }
 
