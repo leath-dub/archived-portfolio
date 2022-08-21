@@ -19,7 +19,7 @@ img/*
 
 !fnt/
 fnt/*
-!fnt/iosevka.ttc
+!fnt/VictorMono-Regular.ttf
 
 !js/
 js/*
