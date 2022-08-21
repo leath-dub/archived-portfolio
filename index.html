@@ -1,3 +1,10 @@
+<!-- LICENSE + sources
+  See LICENSE file for license information, -- note if the LICENSE file is not
+  provided the software, it is in breach of the license of this software
+
+  Sources:
+    Icons - eva icons https://github.com/akveo/eva-icons (under MIT license)
+-->
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -7,12 +14,34 @@
     <title>My Profile - Cathal O'Grady</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <nav>
-      <i class="fa-brands fa-github"></i>
+  <body class="flex">
+    <nav class="navbar flex">
+      <div class="nav-btns flex">
+        <a href="https://github.com/leath-dub" class="gh-icon block-link" target="_blank"></a>
+        <button class="block-link thm-btn" id="select-theme">
+          <i class="dm-moon-icon"></i>
+          <i class="dm-sun-icon"></i>
+        </button>
+      </div>
     </nav>
-    <main>
+    <main class="flex">
+      <section class="profile">
+        <div class="img-logo-cont flex">
+          <img alt="My Logo" src="img/myLogo.svg"/>
+        </div>
+        <div class="sub-logo-details flex">
+          <p>
+            Cathal O'Grady
+          </p>
+          <p class="support-inline-icon">
+            I love GNU/linux&nbsp;<i class="heart-icon block-link"></i>
+          </p>
+        </div>
+      </section>
+      <section class="cv-preview">
+      </section>
     </main>
+  <script src="js/darkmode.js"></script>
   </body>
   <footer>
   </footer>

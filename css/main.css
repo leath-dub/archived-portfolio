@@ -1,0 +1,225 @@
+@font-face
+ {
+    font-family: "Iosevka";
+    font-weight: normal;
+    src: url("../fnt/iosevka.ttc") format("truetype");
+ }
+*
+  {
+    /* Remove any default paddings and margins */
+    padding: 0;
+    margin: 0;
+    color: var(--font-clr);
+    font-family: "Iosevka Slab";
+    transition: opacity 0.2s ease;
+  }
+
+button
+  {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+/* {{{-- Root vars -- */
+:root
+  {
+    /* {{{-- Nord Theme Colors -- */
+
+    /* Polar Night */
+    --nord-pna: #2e3440;
+    --nord-pnb: #3b4252;
+    --nord-pnc: #434c5e;
+    --nord-pnd: #4c566a;
+
+    /* Snow Storm */
+    --nord-ssa: #d8dee9;
+    --nord-ssb: #e5e9f0;
+    --nord-ssc: #eceff4;
+
+    /* Frost */
+    --nord-fa: #8fbcbb;
+    --nord-fb: #88c0d0;
+    --nord-fc: #81a1c1;
+    --nord-fd: #5e81ac;
+
+    /* Aurora */
+    --nord-aa: #bf616a;
+    --nord-ab: #d08770;
+    --nord-ac: #ebcb8b;
+    --nord-ad: #a3be8c;
+    --nord-ae: #b48ead;
+
+    /* -- sroloC emehT droN --}}} */
+
+    /* {{{-- Site vars -- */
+
+    --bg-dark: var(--nord-pna);
+    --bg-light: var(--nord-ssa);
+    /* --main-bg: var(--bg-light);
+
+    --font-clr: var(--nord-pna);
+    */
+
+    --nav-bg: var(--nord-pnb);
+    --nav-width: 3.5em;
+    --img-logo-width: 9.8em;
+    --img-logo-height: 5.8em;
+
+    /* -- srav etiS --}}} */
+  }
+/* -- srav tooR --}}} */
+
+/* {{{-- Shared Classes -- */
+
+.flex
+  {
+    display: flex;
+  }
+
+.block-link
+  {
+    display: block;
+  }
+
+/* -- sessalC derahS --}}} */
+
+/* {{{-- Specific Classes -- */
+
+.navbar
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: var(--nav-width);
+    height: 100%;
+    background-color: var(--nav-bg);
+  }
+
+/* Darkmode checkbox */
+
+
+/* xobkcehc edomkraD */
+
+.nav-btns
+  {
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+/* -- Icons -- */
+
+.gh-icon
+  {
+    background-image: url("../img/github-outline.svg");
+    background-repeat: no-repeat;
+    width: 54%;
+    padding-top: 54%;
+  }
+
+.linux-icon
+  {
+    background-image: url("../img/linux-icon.svg");
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+.heart-icon
+  {
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+.thm-btn
+  {
+    width: 38px;
+    height: 38px;
+    transition: all 0.3s ease;
+    /* overlap */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+.thm-btn:hover > *
+  {
+    transform: rotate(270deg);
+  }
+
+.dm-moon-icon
+  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/moon.svg");
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    /* overlap */
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+.dm-sun-icon
+  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/sun.svg");
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    /* overlap */
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+.support-inline-icon
+  {
+    display: flex;
+    align-items: center;
+  }
+/* -- snocI -- */
+
+main
+  {
+    background-color: var(--main-bg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: var(--nav-width);
+  }
+
+body
+  {
+    background-color: var(--main-bg);
+  }
+
+/* Logo */
+.img-logo-cont img
+  {
+    width: var(--img-logo-width);
+    height: var(--img-logo-height);
+  }
+
+.img-logo-cont
+  {
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--nord-ac);
+    width: var(--img-logo-width);
+    height: var(--img-logo-width);
+    border-radius: 100%;
+  }
+
+.sub-logo-details
+  {
+    flex-direction: column;
+    margin: 0.5rem 1rem;
+  }
+
+/* -- sessalC cificepS --}}} */

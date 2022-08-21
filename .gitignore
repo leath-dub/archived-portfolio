@@ -2,8 +2,25 @@
 
 !.gitignore
 
+!LICENSE
 !index.html
 
 !css/
 css/*
 !css/main.css
+
+!img/
+img/*
+!img/myLogo.svg
+!img/github-outline.svg
+!img/heart.svg
+!img/moon.svg
+!img/sun.svg
+
+!fnt/
+fnt/*
+!fnt/iosevka.ttc
+
+!js/
+js/*
+!js/darkmode.js
