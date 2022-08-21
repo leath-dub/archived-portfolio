@@ -19,8 +19,7 @@ img/*
 
 !fnt/
 fnt/*
-!fnt/VictorMono-Regular.ttf
-!fnt/iosevka.ttf
+!fnt/iosevka-fixed-slab-regular.woff2
 
 !js/
 js/*

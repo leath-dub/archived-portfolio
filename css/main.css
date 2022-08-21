@@ -1,16 +1,19 @@
 @font-face
- {
-    font-family: "Iosevka";
-    font-weight: normal;
-    src: url("../fnt/iosevka.ttf") format("ttf");
- }
+  {
+    font-family: "Iosevka Fixed Slab Web";
+    font-display: swap;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    src: url("../fnt/iosevka-fixed-slab-regular.woff2") format("woff2");
+  }
+
 *
   {
     /* Remove any default paddings and margins */
     padding: 0;
     margin: 0;
     color: var(--font-clr);
-    font-family: "Iosevka";
     transition: opacity 0.2s ease;
   }
 
@@ -25,6 +28,7 @@ button
 /* {{{-- Root vars -- */
 :root
   {
+    font-family: "Iosevka Fixed Slab Web";
     /* {{{-- Nord Theme Colors -- */
 
     /* Polar Night */
